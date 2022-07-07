@@ -1,0 +1,6 @@
+.main-h2 {
+    @include font($fw: 700, $fs: 36px, $lh: 1.17);
+    margin-bottom: 50px;
+    text-align: center;
+    color: #212121;
+}

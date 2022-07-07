@@ -1,0 +1,128 @@
+.footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background: #2F303A;
+}
+
+.footer-all {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.address {
+    @include font($fw: 400, $fs: 14px, $lh:1.71);
+    font-style: normal;
+    width: 231px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+}
+
+.footer-contact {
+    @include font($fw: 400, $fs: 14px, $lh:1.71);
+    display: block;
+    
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    color: $link-color;
+}}
+
+
+.tel {
+    margin-top: 9px;
+}
+
+.footer-link {
+    border: none;
+    min-width: 206px;
+    display: block;
+    transition: color 250ms;
+}
+
+.footer-h3 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.footer-items {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #44454E;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-icon {
+    fill: #ffffff;
+}
+
+.footer-social:hover,
+.footer-social:focus {
+    background-color:$link-color;
+    color: #000000;
+}
+
+.input-email {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+    font-style: regular;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-textarea {resize: none;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.3);
+    width: 358px;
+    height: 50px;
+    margin-right: 10px;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-left: 16px;
+}
+
+.icon-send {
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+
+.button-send {
+    display: flex;
+   
+}
+
+.form-field-footer {
+    display: flex;
+    margin-bottom: 10px;
+    text-align: start;
+    justify-content: center;
+    flex-direction: row;
+}

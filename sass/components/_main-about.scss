@@ -1,0 +1,90 @@
+.main {
+
+    height: 600px;
+    background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    outline: 1px solid black;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.main-h1 {
+    @include font($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+    margin: auto;
+    padding-bottom: 30px;
+    max-width: 600px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about__list {
+    display: flex;
+}
+
+.about__list .about__items+.about__items {
+    margin-left: 30px;
+}
+
+.main-h2-none {
+    padding-top: 0;
+
+}
+
+.about__paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    max-width: 300px;
+    width: 270px;
+    height: 75px;
+    margin-top: 10px;
+    color:$paragraph-color;
+
+}
+
+.about__priority {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
+.about__pictures {
+    display: inline-flex;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+}
+
+.pictures-items {
+    position: relative;
+}
+
+.pictures .pictures-items+.pictures-items {
+    margin-left: 30px
+}
+
+.desct-offer {
+    @include font($fw: 700, $fs: 14px, $lh: 16px);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4px;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.4);
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
