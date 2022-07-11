@@ -1,46 +1,72 @@
 html {
-    box-sizing: border-box;
-
-
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
+
 p,
 h1,
 h2,
 h3 {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding-left: 0;
+  margin: 0;
+  padding-left: 0;
 }
 
 li {
-    display: list-item;
+  display: list-item;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width:480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;}
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+
+  }
+
+  @media screen and (min-width: 768px) {
+
+    max-width: 720px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}

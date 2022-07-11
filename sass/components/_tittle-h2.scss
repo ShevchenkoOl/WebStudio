@@ -3,4 +3,8 @@
     margin-bottom: 50px;
     text-align: center;
     color: #212121;
+
+    @media screen and (max-width:768px) {
+        @include font($fw:700, $fs:28px, $lh:33px)
+      }
 }
