@@ -18,9 +18,10 @@
     text-transform: uppercase;
     color: #FFFFFF;
     
-    @media screen and (min-width: 480px) {
+   /* @media screen and (min-width: 480px) {
         @include font($fw: 900, $fs: 26px, $lh: 42px, $ls: 6%);
-    }
+    color:red;
+    }*/
 }
 
 .about__list {
