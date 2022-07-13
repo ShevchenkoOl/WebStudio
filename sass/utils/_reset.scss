@@ -36,7 +36,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @include desktop{
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -50,19 +50,16 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: blueviolet;
+ 
+  background-color: red;
+}
 
-  @include mobile {
+/*@include mobile {
     max-width: 480px;
 
-  }
+  }*/
 
-  @include tablet{
+/*@include tablet{
 
     max-width: 768px;
     background-color: aqua;
@@ -71,5 +68,4 @@ img {
   @include desktop{
     max-width: 1200px;
     background-color: tomato;
-  }
-}
+  }*/
