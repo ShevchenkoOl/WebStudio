@@ -5,9 +5,28 @@ body {
 .link {
     text-decoration: none;
 }
-@mixin font($fw:500, $fs: 14px, $lh: 1.14, $ls: 0.03em) {
+
+@mixin font($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.03em) {
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
     letter-spacing: $ls;
+}
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768x) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
 }

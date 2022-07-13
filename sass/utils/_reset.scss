@@ -33,12 +33,12 @@ address {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @media screen and (max-width:480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @include desktop{
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -52,21 +52,24 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: blueviolet;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     max-width: 480px;
 
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet{
 
     max-width: 768px;
+    background-color: aqua;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop{
     max-width: 1200px;
+    background-color: tomato;
   }
 }
