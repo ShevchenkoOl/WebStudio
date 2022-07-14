@@ -36,7 +36,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -60,16 +60,19 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
+    /*background-color: rgba(145, 74, 74, 0.133);*/
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    /*background-color: aqua;*/
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    /*background-color:rgb(198, 156, 237);*/
   }
 }
 
@@ -87,6 +90,21 @@ body {
   text-decoration: none;
 }
 
+/*@mixin mobile {
+    @media screen and (min-width: 480px) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @mixin desktop {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }*/
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -232,7 +250,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 768x) {
+@media screen and (min-width: 768px) {
   .team-items {
     width: calc((100% - 30px) / 2);
   }
@@ -300,18 +318,18 @@ body {
 .main-h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  line-height: 42px;
+  letter-spacing: 3%;
   margin-bottom: 50px;
   text-align: center;
   color: #212121;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .main-h2 {
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
-    letter-spacing: 0.03em;
+    letter-spacing: 3%;
   }
 }
 
@@ -347,10 +365,16 @@ body {
   max-width: 600px;
   text-transform: uppercase;
   color: #FFFFFF;
-  /* @media screen and (min-width: 480px) {
-       @include font($fw: 900, $fs: 26px, $lh: 42px, $ls: 6%);
-   color:red;
-   }*/
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .main-h1 {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 6%;
+    max-width: 400px;
+  }
 }
 
 .about__list {
@@ -363,7 +387,7 @@ body {
 /*.about__list .about__items+.about__items {
     margin-left: 30px;
 }*/
-@media screen and (min-width: 768x) {
+@media screen and (min-width: 768px) {
   .about__items {
     width: calc((100% - 30px) / 2);
   }
@@ -376,6 +400,11 @@ body {
 
 .main-h2-none {
   padding-top: 0;
+}
+@media screen and (max-width: 1200px) {
+  .main-h2-none {
+    display: none;
+  }
 }
 
 .about__paragraph {
@@ -504,9 +533,17 @@ body {
 }
 
 .footer-all {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  /*@media screen and (max-width: 480px)
+  {   display: flex;
+      flex-direction: column;
+      justify-content: center;*/
+}
+@media screen and (min-width: 1200px) {
+  .footer-all {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .address {
@@ -519,6 +556,16 @@ body {
   color: #FFFFFF;
   margin-top: 20px;
   margin-bottom: 9px;
+}
+
+@media screen and (min-width: 480px) {
+  .address-all {
+    display: block;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-contact {
@@ -545,6 +592,11 @@ body {
   display: block;
   transition: color 250ms;
 }
+@media screen and (min-width: 480px) {
+  .footer-link {
+    margin-bottom: 60px;
+  }
+}
 
 .footer-h3 {
   display: inline-block;
@@ -556,6 +608,11 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
   padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer-h3 {
+    align-items: center;
+  }
 }
 
 .footer-items {
@@ -610,6 +667,11 @@ body {
   padding-top: 15px;
   padding-left: 16px;
 }
+@media screen and (max-width: 1200px) {
+  .footer-textarea {
+    width: 450px;
+  }
+}
 
 .icon-send {
   margin-left: 10px;
@@ -619,6 +681,11 @@ body {
 .button-send {
   display: flex;
 }
+@media screen and (max-width: 1200px) {
+  .button-send {
+    margin-top: 20px;
+  }
+}
 
 .form-field-footer {
   display: flex;
@@ -626,6 +693,11 @@ body {
   text-align: start;
   justify-content: center;
   flex-direction: row;
+}
+@media screen and (max-width: 1200px) {
+  .form-field-footer {
+    display: block;
+  }
 }
 
 .backdrop {

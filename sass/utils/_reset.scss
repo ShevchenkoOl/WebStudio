@@ -36,7 +36,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @include desktop {
+ @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -50,22 +50,26 @@ img {
 }
 
 .container {
- 
-  background-color: red;
-}
-
-/*@include mobile {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  
+  @media screen and (min-width: 480px){
     max-width: 480px;
+    /*background-color: rgba(145, 74, 74, 0.133);*/
+    }
 
-  }*/
-
-/*@include tablet{
+@media screen and (min-width: 768px){
 
     max-width: 768px;
-    background-color: aqua;
+    /*background-color: aqua;*/
   }
 
-  @include desktop{
+  @media screen and (min-width: 1200px){
     max-width: 1200px;
-    background-color: tomato;
-  }*/
+    /*background-color:rgb(198, 156, 237);*/
+  }
+}

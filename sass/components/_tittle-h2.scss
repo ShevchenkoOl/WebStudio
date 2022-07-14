@@ -1,10 +1,10 @@
 .main-h2 {
-    @include font($fw: 700, $fs: 36px, $lh: 1.17);
+    @include font($fw:700, $fs:36px, $lh:42px, $ls:3%);
     margin-bottom: 50px;
     text-align: center;
     color: #212121;
 
-    @media screen and (max-width:768px) {
-        @include font($fw:700, $fs:28px, $lh:33px)
+    @media screen and (max-width:1200px) {
+      @include font ($fw:700, $fs:28px, $lh:33px, $ls:3%)
       }
 }

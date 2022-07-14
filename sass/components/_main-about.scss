@@ -17,12 +17,13 @@
     max-width: 600px;
     text-transform: uppercase;
     color: #FFFFFF;
-    
-   /* @media screen and (min-width: 480px) {
-        @include font($fw: 900, $fs: 26px, $lh: 42px, $ls: 6%);
-    color:red;
-    }*/
-}
+    text-align: center;
+
+    @media screen and (max-width:1200px) {
+        @include font ($fw:900, $fs:26px, $lh:42px, $ls:6%);
+        max-width:400px;
+        
+}}
 
 .about__list {
     display: flex;
@@ -35,18 +36,22 @@
     margin-left: 30px;
 }*/
 .about__items {
-    @include tablet {
+    @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
     }
 
-    @include desktop{
+    @media screen and (min-width: 1200px) {
         width: calc((100% - 90px) / 4);
     }
 }
 
 .main-h2-none {
     padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
     }
+}
 
 .about__paragraph {
     font-size: 14px;
