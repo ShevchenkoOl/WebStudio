@@ -1,5 +1,5 @@
 .menu__link {
-   @include font($ls: 0.02em);
+    @include font($ls: 0.02em);
 
     padding-top: 32px;
     padding-bottom: 32px;
@@ -39,6 +39,9 @@
     margin-left: 93px;
     margin-right: 250px;
 
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .menu__list .menu__items+.menu__items {
@@ -57,6 +60,12 @@
     &:focus {
         color: $link-color;
     }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    /*@media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+    }*/
 }
 
 .contact__phone {

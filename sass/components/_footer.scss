@@ -1,7 +1,7 @@
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
-    background: #2F303A;  
+    background: #2F303A;
 }
 
 .footer-all {
@@ -9,11 +9,16 @@
     align-items: baseline;
     justify-content: space-between;
 
-   @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         flex-direction: column;
         text-align: center;
         align-items: center;
-       }
+    }
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
 
 .address {
@@ -23,7 +28,7 @@
     color: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 9px;
-   }
+}
 
 .footer-contact {
     @include font($fw: 400, $fs: 14px, $lh: 1.71);
@@ -37,7 +42,7 @@
     &:focus {
         color: $link-color;
     }
-    
+
 }
 
 
@@ -50,8 +55,6 @@
     min-width: 206px;
     display: block;
     transition: color 250ms;
-
-
 }
 
 .footer-h3 {
@@ -64,6 +67,7 @@
     color: #ffffff;
     padding-left: 10px;
     margin-bottom: 20px;
+
     @media screen and (max-width: 768px) {
         margin-top: 60px;
     }
@@ -124,6 +128,7 @@
 
     @media screen and (max-width: 1200px) {
         width: 450px;
+        align-items: center;
     }
 }
 
@@ -141,12 +146,19 @@
 
 }
 
+.footer-email {
+    @media screen and (min-width: 767px) {
+        margin-top: 60px;
+        width: 100%;
+        }
+}
+
 .form-field-footer {
     display: flex;
     text-align: start;
     justify-content: center;
     flex-direction: row;
-   
+
     @media screen and (max-width: 1199px) {
         flex-direction: column;
         }

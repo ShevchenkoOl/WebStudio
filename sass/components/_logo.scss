@@ -6,6 +6,13 @@
     letter-spacing: 0.03em;
 
     color: var(--link-color);
+
+    @media screen and (max-width: 1199px) {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 3%;
+    }
 }
 
 .logo-studio {
@@ -16,7 +23,12 @@
     letter-spacing: 0.03em;
 
     color: #000000;
-
+    @media screen and (max-width: 1199px) {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 3%;
+    }
 }
 
 .logo-studio-footer {
