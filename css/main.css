@@ -533,16 +533,15 @@ body {
 }
 
 .footer-all {
-  /*@media screen and (max-width: 480px)
-  {   display: flex;
-      flex-direction: column;
-      justify-content: center;*/
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .footer-all {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -556,16 +555,6 @@ body {
   color: #FFFFFF;
   margin-top: 20px;
   margin-bottom: 9px;
-}
-
-@media screen and (min-width: 480px) {
-  .address-all {
-    display: block;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
 }
 
 .footer-contact {
@@ -592,11 +581,6 @@ body {
   display: block;
   transition: color 250ms;
 }
-@media screen and (min-width: 480px) {
-  .footer-link {
-    margin-bottom: 60px;
-  }
-}
 
 .footer-h3 {
   display: inline-block;
@@ -606,12 +590,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .footer-h3 {
-    align-items: center;
+    margin-top: 60px;
   }
 }
 
@@ -681,7 +665,7 @@ body {
 .button-send {
   display: flex;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .button-send {
     margin-top: 20px;
   }
@@ -689,14 +673,13 @@ body {
 
 .form-field-footer {
   display: flex;
-  margin-bottom: 10px;
   text-align: start;
   justify-content: center;
   flex-direction: row;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .form-field-footer {
-    display: block;
+    flex-direction: column;
   }
 }
 

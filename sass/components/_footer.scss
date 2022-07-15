@@ -1,21 +1,19 @@
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
-    background: #2F303A;
+    background: #2F303A;  
 }
 
 .footer-all {
-    /*@media screen and (max-width: 480px)
-    {   display: flex;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+   @media screen and (max-width: 768px) {
         flex-direction: column;
-        justify-content: center;*/
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-
-    }
+        text-align: center;
+        align-items: center;
+       }
 }
 
 .address {
@@ -25,18 +23,7 @@
     color: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 9px;
-
-}
-
-.address-all {
-    @media screen and (min-width: 480px) {
-        display: block;
-        width: 100%;
-        justify-content: space-around;
-        flex-direction: column;
-        margin-bottom: 60px;
-    }
-}
+   }
 
 .footer-contact {
     @include font($fw: 400, $fs: 14px, $lh: 1.71);
@@ -50,6 +37,7 @@
     &:focus {
         color: $link-color;
     }
+    
 }
 
 
@@ -63,9 +51,7 @@
     display: block;
     transition: color 250ms;
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 60px;
-    }
+
 }
 
 .footer-h3 {
@@ -76,11 +62,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 20px;
     padding-left: 10px;
-    
+    margin-bottom: 20px;
     @media screen and (max-width: 768px) {
-     align-items: center;
+        margin-top: 60px;
     }
 }
 
@@ -136,10 +121,10 @@
     color: #ffffff;
     padding-top: 15px;
     padding-left: 16px;
-    @media screen and (max-width: 1200px){
+
+    @media screen and (max-width: 1200px) {
         width: 450px;
-           
-      }
+    }
 }
 
 .icon-send {
@@ -150,7 +135,7 @@
 .button-send {
     display: flex;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         margin-top: 20px;
     }
 
@@ -158,12 +143,11 @@
 
 .form-field-footer {
     display: flex;
-    margin-bottom: 10px;
     text-align: start;
     justify-content: center;
     flex-direction: row;
-
-    @media screen and (max-width: 1200px) {
-        display: block;
-    }
+   
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        }
 }
