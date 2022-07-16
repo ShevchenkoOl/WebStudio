@@ -8,6 +8,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    width: 100%;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
@@ -15,10 +16,10 @@
         align-items: center;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
         flex-wrap: wrap;
         text-align: center;
-    }
+        }
 }
 
 .address {
@@ -42,7 +43,6 @@
     &:focus {
         color: $link-color;
     }
-
 }
 
 
@@ -52,9 +52,14 @@
 
 .footer-link {
     border: none;
-    min-width: 206px;
     display: block;
     transition: color 250ms;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        width: 100%; 
+    }
+
 }
 
 .footer-h3 {
@@ -140,7 +145,7 @@
 .button-send {
     display: flex;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
         margin-top: 20px;
     }
 
@@ -150,7 +155,7 @@
     @media screen and (min-width: 767px) {
         margin-top: 60px;
         width: 100%;
-        }
+    }
 }
 
 .form-field-footer {
@@ -158,8 +163,10 @@
     text-align: start;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
         flex-direction: column;
-        }
+        text-align: center;
+    }
 }
