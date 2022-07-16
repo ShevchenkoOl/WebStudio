@@ -8,6 +8,32 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background.png");
     background-position: center;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_x2.png");
+    }
+
+    @media screen and (max-width:768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_mb_x1.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_mb_x2.png");
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_tb_x1.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_tb_x2.png");
+        }
+    }
 }
 
 .main-h1 {
@@ -20,10 +46,11 @@
     text-align: center;
 
     @media screen and (max-width:1200px) {
-        @include font ($fw:900, $fs:26px, $lh:42px, $ls:6%);
-        max-width:400px;
-        
-}}
+        @include font ($fw: 900, $fs: 26px, $lh: 42px, $ls: 6%);
+        max-width: 400px;
+
+    }
+}
 
 .about__list {
     display: flex;
@@ -32,9 +59,6 @@
     gap: 30px;
 }
 
-/*.about__list .about__items+.about__items {
-    margin-left: 30px;
-}*/
 .about__items {
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);

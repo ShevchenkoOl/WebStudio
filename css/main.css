@@ -403,6 +403,31 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_x2.png");
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_mb_x1.png");
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_mb_x2.png");
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_tb_x1.png");
+  }
+}
+@media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (max-width: 1200px) and (min-resolution: 192dpi), screen and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background_tb_x2.png");
+  }
+}
 
 .main-h1 {
   font-weight: 900;
@@ -433,9 +458,6 @@ body {
   gap: 30px;
 }
 
-/*.about__list .about__items+.about__items {
-    margin-left: 30px;
-}*/
 @media screen and (min-width: 768px) {
   .about__items {
     width: calc((100% - 30px) / 2);
