@@ -216,10 +216,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .together-contact {
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 170px;
   }
 }
 
@@ -228,14 +225,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  height: 16px;
+  width: 100%;
+  /*height: 16px;*/
   color: #757575;
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* @media screen and (max-width: 1200px) {
-       position: relative;
-       margin-left: 20px;;
-   }*/
 }
 .contact:hover, .contact:focus {
   color: var(--link-color);
@@ -249,10 +243,9 @@ body {
 .contact__phone {
   margin-left: 30px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .contact__phone {
     margin-left: 0;
-    margin-top: 10px;
   }
 }
 
@@ -268,8 +261,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .contact__icon {
-    position: absolute;
-    margin-right: 40px;
+    margin-right: 8px;
   }
 }
 
@@ -787,6 +779,12 @@ body {
   padding: 40px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .modal-btn {
   position: absolute;
@@ -826,6 +824,11 @@ body {
   letter-spacing: 0.01em;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (max-width: 1200px) {
+  .modal-title {
+    line-height: 30px;
+  }
 }
 
 .modal-form {
@@ -926,6 +929,12 @@ body {
   position: relative;
   margin-left: 7px;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .check-text::before {

@@ -22,6 +22,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
     text-align: center;
+
+    @media screen and (max-width: 1200px) {
+        width: 450px;
+        height: 609px;    
+    }
 }
 
 .modal-btn {
@@ -62,6 +67,9 @@
     letter-spacing: 0.01em;
     margin-bottom: 12px;
     color: #212121;
+    @media screen and (max-width: 1200px) {
+        line-height: 30px;
+    }
 }
 
 .modal-form {
@@ -167,6 +175,11 @@
     position: relative;
     margin-left: 7px;
     padding-bottom: 30px;
+    @media screen and (max-width: 1200px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
 }
 
 .check-text::before {
