@@ -27,27 +27,25 @@
 
 <body>
     <!--Header-->
-    <header class="line">
-        <div class="container">
-            <nav class="headr">
-                <div class="headr-logo"><a href="./index.html" class="logo-web link">Web<span
-                            class="logo-studio link">Studio</span></a></div>
-                <ul class="menu__list">
-                    <li class="menu__items"><a href="./index.html" class="menu__link link">Студия</a></li>
-                    <li class="menu__items"><a href="./portfolio.html" class="menu__link current link">Портфолио</a>
-                    </li>
-                    <li class="menu__items"><a href="" class="menu__link link">Контакты</a></li>
-                </ul>
+    <header class="container headr line">
 
-                <a href="mailto:info@devstudio.com" class="contact link">
+        <nav class="headr">
+            <div class="headr-logo"><a href="./index.html" class="logo-web link">Web<span
+                        class="logo-studio link">Studio</span></a></div>
+            <ul class="menu__list">
+                <li class="menu__items"><a href="./index.html" class="menu__link current link">Студия</a></li>
+                <li class="menu__items"><a href="./portfolio.html" class="menu__link link">Портфолио</a></li>
+                <li class="menu__items"><a href="" class="menu__link link">Контакты</a></li>
+            </ul>
+            <div class="together-contact">
+                <a href="mailto:info@devstudio.com" class="contact link contact-email">
                     <svg class="contact__icon" width="12" height="16">
-                        <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                        <use href="images/symbol-defs.svg#icon-envelope-hover"></use>
                     </svg>info@devstudio.com</a>
                 <a href="tel:+380961111111" class="contact contact__phone link"><svg class="contact__icon" width="10"
                         height="16">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        <use href="images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>+380961111111</a>
-        </div>
         </nav>
     </header>
     <!--Main-->
@@ -70,7 +68,8 @@
             <div class="container">
                 <ul class="portfolio-list">
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img1.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img1_x1.jpg, 
+                        images/img1_x2.jpg" src="images/img1.jpg" width="370" height="284"
                                 alt="произвольная картинка 1" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -82,7 +81,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img2.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img2_x1.jpg, 
+                            images/img2_x2.jpg" src="images/img2.jpg" width="370" height="284"
                                 alt="произвольная картинка 2" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -95,7 +95,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img3.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img3_x1.jpg, 
+                            images/img3_x2.jpg" src="images/img3.jpg" width="370" height="284"
                                 alt="произвольная картинка 3" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -107,7 +108,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img4.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img4_x1.jpg, 
+                            images/img4_x2.jpg" src="images/img4.jpg" width="370" height="284"
                                 alt="произвольная картинка 4" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -119,7 +121,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img5.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img5_x1.jpg, 
+                            images/img5_x2.jpg" src="images/img5.jpg" width="370" height="284"
                                 alt="произвольная картинка 5" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -131,7 +134,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img6.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img6_x1.jpg, 
+                            images/img6_x2.jpg" src="images/img6.jpg" width="370" height="284"
                                 alt="произвольная картинка 6" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -143,7 +147,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img7.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img7_x1.jpg, 
+                            images/img7_x2.jpg" src="images/img7.jpg" width="370" height="284"
                                 alt="произвольная картинка 7" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -155,7 +160,8 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img8.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img8_x1.jpg, 
+                            images/img8_x2.jpg" src="images/img8.jpg" width="370" height="284"
                                 alt="произвольная картинка 8" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -167,7 +173,9 @@
                         </div>
                     </li>
                     <li class="portfolio-items">
-                        <div class="portfolio-wrap"><img src="images/img9.jpg" width="370" height="284"
+                        <div class="portfolio-wrap"><img srcset="images/img9_x1.jpg, 
+                            images/img9_x2.jpg" 
+                            src="images/img9.jpg" width="370" height="284"
                                 alt="произвольная картинка 9" />
                             <p class="portfolio-corren-text">Ресурс предлагает комплексные предложения с разным уровнем
                                 функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -234,6 +242,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
