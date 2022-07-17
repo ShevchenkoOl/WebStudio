@@ -1,57 +1,59 @@
 .footer {
-    // display: flex;
-    background-color:  #2F303A;
+
+    background-color: #2F303A;
     padding-bottom: 60px;
     flex-direction: column;
     padding-top: 60px;
-    
+
     @include mobile {
-    margin: 0 auto;
+        margin: 0 auto;
     }
-    @include tablet {
-    }
+
+    @include tablet {}
+
     @include desktop {
         flex-direction: row;
     }
 }
 
-.footer-contacts-join{
+.footer-contacts-join {
 
     @include tablet {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
     }
 }
 
-.footer-contact-wrap{ 
+.footer-contact-wrap {
     @media screen and (max-width:1199px) {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
+
     @include tablet {
-        
+
         margin-left: 76px;
     }
 
     @include desktop {
-    margin-right: 70px;
-    margin-left: 0px;
+        margin-right: 70px;
+        margin-left: 0px;
     }
 }
 
 .footer__logo {
-    
+
     display: inline-block;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 24px;
 
     @include desktop {
-    font-size: 26px;
+        font-size: 26px;
     }
 
     line-height: 1.17;
@@ -59,19 +61,19 @@
     text-decoration: none;
     color: var(--accent-color);
     margin-bottom: 20px;
-    
+
 }
 
-.footer__logo-bluewhite{
+.footer__logo-bluewhite {
     color: var(--primary-white-color);
 }
- 
+
 .footer__contact-item {
     @media screen and (max-width:1199px) {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; 
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
 
     font-style: normal;
@@ -81,11 +83,13 @@
 }
 
 .footer__adress {
-    color:var(--primary-white-color);
+    color: var(--primary-white-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:active, &:focus, &:hover{
-    color: var(--accent-color);
+    &:active,
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
     }
 }
 
@@ -93,21 +97,27 @@
 
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:active, &:focus, &:hover{
-        color: var(--accent-color);
-        }
-}
 
-.footer__number {
-    line-height:  1.71;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:active, &:focus, &:hover{
-    color: var(--accent-color);
+    &:active,
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
     }
 }
 
-.join-us__title{
+.footer__number {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.join-us__title {
     font-family: var(--main-font-family);
     font-weight: 700;
     font-size: 14px;
@@ -125,31 +135,31 @@
         display: flex;
         flex-direction: column;
         align-content: center;
-        align-items: center; 
+        align-items: center;
         margin-top: 60px;
         margin-bottom: 60px;
     }
-    @include tablet{ 
+
+    @include tablet {
         padding-right: 89px;
-        margin-top: 0;  
-        // margin-top: 65px;   - gave 60 px to footer
-        }
-// write  interval  tablet only padding right 89px
+        margin-top: 0;
+
+    }
+
     @include desktop {
-        // margin-top: 72px;
         padding-right: 0;
-        
+
     }
 }
 
 
 
-.company-soc__list{
+.company-soc__list {
     display: flex;
     justify-content: center;
 }
 
-.company-soc__item{
+.company-soc__item {
     width: 44px;
     height: 44px;
     display: flex;
@@ -159,45 +169,51 @@
 
     border-radius: 50%;
     margin-left: 10px;
-    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
         background-color: var(--accent-color);
     }
-    &:first-child{
+
+    &:first-child {
         margin-left: 0;
     }
 }
 
-.company-soc__icon{
+.company-soc__icon {
     fill: var(--primary-white-color);
 }
-.footer-top-wrap{
-    @include tablet { 
-    display: flex;
-    flex-direction: column;
+
+.footer-top-wrap {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
     }
+
     @include desktop {
         flex-direction: row;
     }
 }
 
-.subscription{
-    
-    text-align: center; 
-    
+.subscription {
+
+    text-align: center;
+
     @include tablet {
         margin-top: 60px;
         padding-right: 0;
     }
 
-    @include desktop { 
+    @include desktop {
         margin-top: 0px;
         margin-left: 93px;
         align-items: flex-start;
         margin-right: 215px;
-       
-        }
-    &::placeholder{
+
+    }
+
+    &::placeholder {
         font-family: var(--main-font-family);
         font-style: normal;
         font-weight: 400;
@@ -208,7 +224,7 @@
         color: rgba(255, 255, 255, 0.6);
     }
 }
- 
+
 
 .subscription__motto {
     font-family: var(--main-font-family);
@@ -218,41 +234,42 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-   
+
     color: var(--primary-white-color);
 
     margin-bottom: 20px;
+
     @include desktop {
         text-align: start;
         margin-top: 12px;
     }
 }
 
-.subscription__form{
+.subscription__form {
     display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center; 
+    align-items: center;
 
     @include desktop {
-    flex-direction: row;
-    // display: flex;
-    justify-content: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 }
 
-.subscription__input{
+.subscription__input {
     background-color: transparent;
     min-height: 50px;
     padding-left: 16px;
-    
+
     width: 300px;
-    @include mobile { 
-    width: 450px;
+
+    @include mobile {
+        width: 450px;
     }
-    
-    
-   
+
+
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -266,18 +283,18 @@
 
     margin-bottom: 20px;
 
-    @include desktop { 
+    @include desktop {
         width: 358px;
         display: flex;
-        align-content: center; 
+        align-content: center;
         align-items: center;
         margin-bottom: 0px;
         margin-right: 12px;
-        }
-    
+    }
+
 }
 
-.subscription__btn{
+.subscription__btn {
     display: flex;
     width: 200px;
     height: 50px;
@@ -294,11 +311,11 @@
 .subscription__send-icon {
     width: 24px;
     height: 24px;
-    margin-left:10px;
-} 
+    margin-left: 10px;
+}
 
-.subscription_btn-wrap{
-    @include desktop{
+.subscription_btn-wrap {
+    @include desktop {
         display: flex;
         align-items: center;
         align-content: center;
