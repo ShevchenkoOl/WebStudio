@@ -1,10 +1,11 @@
 .headr-mob {
-    border-bottom: 1px solid #ECECEC;
-    padding: 16px 15px;
-    /* @media screen and (min-width:768px){
+   /* border-bottom: 1px solid #ECECEC;*/
+    /*padding: 16px 15px;*/
+    /*margin-left: 0;*/
+   
+    @media screen and (min-width:768px){
             display: none;
-        }*/
-}
+        }}
 
 .mob-menu-open {
     position: fixed;
@@ -17,8 +18,7 @@
     padding-top: 21px;
     padding-bottom: 48px;
     padding-left: 40px;
-    padding-right: 25px;
-
+    padding-right: 25px;}
     .container {
         display: flex;
         flex-direction: column;
@@ -27,21 +27,15 @@
         overflow: auto;
     }
 
-}
-
 .mob-menu-btn-open {
-    font-family: inherit;
-    padding: 0;
-    align-items: center;
-    cursor: pointer;
+    
     border: 0;
     background-color: transparent;
-    margin-left: auto;
-
-    @media screen and (max-width:768px) {
-        display: none;
     }
-}
+
+    /*@media screen and (max-width:768px) {
+        display: none;
+    }*/
 
 
 .hheader-mob-btn-icon {
@@ -53,7 +47,6 @@
     &:focus {
         fill: $link-color;
     }
-
 }
 
 .mob-menu-btn-close {
@@ -131,7 +124,7 @@
     transform: rotate(90deg);
 }*/
 
-.mob-menu-soc-link {
+/*.mob-menu-soc-link {
     @include font(500, 18px, 1.22, 0.02em);
     color: #2196F3;
     margin-right: 10px;
@@ -143,6 +136,5 @@
 ::after {
     content: "";*/
 
-    /*padding-right: 10px;*/
-    border-color: rgba(33, 33, 33, 0.2);
-}
+    /*padding-right: 10px;
+    border-color: rgba(33, 33, 33, 0.2);*/
