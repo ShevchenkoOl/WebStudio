@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/reset";
+@import "./utils/container";
+
+@import "./utils/common";
+@import "./utils/visualli_hidden";
+
+
+@import "./components/header";
+@import "./components/hero_section";
+@import "./components/about_us";
+@import "./components/our_work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+
+@import "./components/portfolio";
+
+@import "./components/modal_form";
