@@ -98,12 +98,7 @@
     &:not(:last-child) {
         margin-right: 50px;
     }
-    /*@include desktop {
-        &:not(:last-child) {
-            margin-right: 93px;
-        }
-    }*/
-}
+   }
 
 .menu__link {
     display: block;
