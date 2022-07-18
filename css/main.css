@@ -221,6 +221,11 @@ img {
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .menu__item:not(:last-child) {
+    margin-right: 93px;
+  }
+}
 
 .menu__link {
   display: block;
@@ -384,22 +389,21 @@ img {
   align-items: center;
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
-.contact__link:hover, .contact__link:focus {
+.contact__link:hover {
   color: var(--accent-color);
 }
 
 .contact__icon {
   margin-right: 8px;
-  color: var(--accent-color);
+  fill: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.contact__icon:hover, .contact__icon:focus {
-  fill: currentColor;
+.contact__link:hover .contact__icon {
+  fill: var(--accent-color);
 }
 
 .contact__icon-envelope {
@@ -1151,6 +1155,11 @@ img {
   color: var(--primary-white-color);
 }
 
+.footer__contact-list,
+.footer__contact-item + .footer__contact-item {
+  margin-top: 9px;
+}
+
 .footer__contact-item {
   font-style: normal;
   line-height: 1.71;
@@ -1200,7 +1209,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-  text-align: center;
+  text-align: start;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1278,7 +1287,6 @@ img {
     margin-top: 0px;
     margin-left: 93px;
     align-items: flex-start;
-    margin-right: 215px;
   }
 }
 .subscription::placeholder {
@@ -1357,6 +1365,10 @@ img {
 }
 
 .subscription__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.878;
+  letter-spacing: 0.06em;
   display: flex;
   width: 200px;
   height: 50px;
@@ -1371,9 +1383,8 @@ img {
 }
 
 .subscription__send-icon {
-  width: 24px;
-  height: 24px;
   margin-left: 10px;
+  fill: var(--primary-white-color);
 }
 
 @media screen and (min-width: 1200px) {

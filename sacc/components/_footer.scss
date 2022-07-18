@@ -68,6 +68,11 @@
     color: var(--primary-white-color);
 }
 
+.footer__contact-list,
+.footer__contact-item+.footer__contact-item {
+    margin-top: 9px;
+}
+
 .footer__contact-item {
     @media screen and (max-width:1199px) {
         display: flex;
@@ -86,6 +91,7 @@
     color: var(--primary-white-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
     &:active,
     &:focus,
     &:hover {
@@ -94,7 +100,6 @@
 }
 
 .footer__email {
-
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -127,7 +132,7 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
-    text-align: center;
+    text-align:start;
 }
 
 .footer-join-us-wrap {
@@ -209,8 +214,6 @@
         margin-top: 0px;
         margin-left: 93px;
         align-items: flex-start;
-        margin-right: 215px;
-
     }
 
     &::placeholder {
@@ -295,6 +298,10 @@
 }
 
 .subscription__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.878;
+    letter-spacing: 0.06em;
     display: flex;
     width: 200px;
     height: 50px;
@@ -309,9 +316,8 @@
 }
 
 .subscription__send-icon {
-    width: 24px;
-    height: 24px;
     margin-left: 10px;
+    fill: var(--primary-white-color);
 }
 
 .subscription_btn-wrap {
