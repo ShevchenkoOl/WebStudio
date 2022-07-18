@@ -48,7 +48,7 @@ address {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: center;
+  /*justify-content: center;*/
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
@@ -118,46 +118,19 @@ img {
 }
 
 .header {
+  height: 60px;
   background-color: var(--primary-white-color);
 }
 @media screen and (min-width: 768px) {
   .header {
-    border-bottom: var(--border-color-header);
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 480px) {
-  .header {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 768px) {
-  .header {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .header {
-    width: 1200px;
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
   }
 }
 
 .header__container {
   position: relative;
   display: flex;
-}
-
-@media screen and (min-width: 768px) {
-  .header__bottom-border {
-    border-bottom: var(--border-color-header);
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header__bottom-border {
-    justify-content: flex-start;
-  }
 }
 
 .main-nav {

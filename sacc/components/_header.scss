@@ -1,37 +1,15 @@
-.header {
-    background-color: var(--primary-white-color);
-    @include tablet{
-    border-bottom:var(--border-color-header) ;
-    width: 100%;
-    margin: 0 auto;
 
-    
-    @include mobile {
-        width: 480px;
-    }
-    @include tablet {
-        width: 768px;
-    }
-    @include desktop {
-        width: 1200px;
-    }
-    }
-}
+.header {
+    height: 60px;
+    background-color:var(--primary-white-color);
+    @media screen and (min-width: 768px) {
+      border-bottom: 1px solid #ECECEC;
+      height: 80px;
+    }}
 
 .header__container{
 position: relative;
 display: flex;
-}
-
-.header__bottom-border{
-    @include tablet{
-        border-bottom:var(--border-color-header) ;
-        max-width: 100%;
-        }
-    @media screen and (max-width:767px) {
-        justify-content: flex-start 
-    }
-
 }
 
 .main-nav{
