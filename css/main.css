@@ -217,14 +217,14 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  /*@include desktop {
+      &:not(:last-child) {
+          margin-right: 93px;
+      }
+  }*/
 }
 .menu__item:not(:last-child) {
   margin-right: 50px;
-}
-@media screen and (min-width: 1200px) {
-  .menu__item:not(:last-child) {
-    margin-right: 93px;
-  }
 }
 
 .menu__link {
@@ -389,21 +389,22 @@ img {
   align-items: center;
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-.contact__link:hover {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
 .contact__icon {
   margin-right: 8px;
-  fill: #757575;
+  color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.contact__link:hover .contact__icon {
-  fill: var(--accent-color);
+.contact__icon:hover, .contact__icon:focus {
+  fill: currentColor;
 }
 
 .contact__icon-envelope {
@@ -825,6 +826,9 @@ img {
   color: var(--primary-text-color);
 }
 
+.our-work {
+  padding-bottom: 94px;
+}
 @media screen and (max-width: 1199px) {
   .our-work {
     display: none;
@@ -879,6 +883,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -970,25 +975,18 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  color: var(--icons-gray);
+  background-color: var(--primary-white-color);
   cursor: pointer;
   transition: backgorund-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__soc-link:hover, .team__soc-link :focus {
+.team__soc-link:hover, .team__soc-link:focus {
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 .team__soc-icon {
-  fill: var(--icons-gray);
-  background-color: var(--primary-white-color);
-  transition: backgorund-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__soc-icon:focus, .team__soc-icon:hover {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-.team__soc-link:hover .team__soc-icon {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
+  fill: currentColor;
 }
 
 .clients {
