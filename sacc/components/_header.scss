@@ -42,9 +42,6 @@ display: flex;
     @include desktop {
     padding-right: 93px;
     line-height: 1.19;
-
-    
-
     }
 }
 
@@ -102,10 +99,10 @@ display: flex;
     &:active{
         color: var(--accent-color);
     }
-
+    
     .menu__item.current-page &::after{
         content: "";
-        display: block;
+        display:block;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -115,7 +112,7 @@ display: flex;
         position: absolute;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+    
     .menu__item.current-page  &{
         color: var(--accent-color);
     }
@@ -222,7 +219,8 @@ display: flex;
     align-items: center;
     justify-content: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover{
+    &:hover,
+    &:focus{
         color: var(--accent-color)
     }
 }
@@ -230,17 +228,19 @@ display: flex;
     margin-right: 8px ;
     fill: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .contact__link:hover &{
-        fill: var(--accent-color);
-    }
     justify-content: center;
     align-items: center;
     align-content: center;
+    &:hover,
+    &:focus{
+        fill: var(--accent-color)
+    }
 }
+
 .contact__icon-envelope{
     width: 14px;
     height: 10px;
-
+   
     @include desktop { 
     margin-right: 10px;
     width: 16px;

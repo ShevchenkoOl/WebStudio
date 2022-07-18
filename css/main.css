@@ -363,7 +363,7 @@ img {
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact__link:hover {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -375,7 +375,7 @@ img {
   align-items: center;
   align-content: center;
 }
-.contact__link:hover .contact__icon {
+.contact__icon:hover, .contact__icon:focus {
   fill: var(--accent-color);
 }
 
