@@ -2,10 +2,9 @@
 .header {
     height: 60px;
     background-color:var(--primary-white-color);
-    @media screen and (min-width: 768px) {
-      border-bottom: 1px solid #ECECEC;
-      height: 80px;
-    }}
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+    }
 
 .header__container{
 position: relative;
@@ -69,12 +68,12 @@ display: flex;
     &:not(:last-child) {
         margin-right: 50px;
     }
-    @include desktop {
+    /*@include desktop {
         &:not(:last-child) {
-            margin-right: 93px;
+            margin-right: 30px;
         }
-    }
-}
+    }*/}
+
 
 .menu__link {
     display: block;
@@ -388,9 +387,9 @@ display: flex;
 }
 
 
-.mob-menu__current{
+/*.mob-menu__current{
 color: var(--accent-color);
-}
+} якщо буде запотрібно виділення кольором активне меню, добавити цей клас в html*/
 
 .mob-menu__tel{
     font-family: 'Roboto';
