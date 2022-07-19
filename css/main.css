@@ -518,9 +518,9 @@ img {
   margin-bottom: 32px;
 }
 
-/*.mob-menu__current{
-color: var(--accent-color);
-} якщо буде запотрібно виділення кольором активне меню, добавити цей клас в html*/
+.mob-menu__current {
+  color: var(--accent-color);
+} /* якщо буде запотрібно виділення кольором активне меню, добавити цей клас в html*/
 .mob-menu__tel {
   font-family: "Roboto";
   font-style: normal;

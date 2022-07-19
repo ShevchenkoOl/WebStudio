@@ -387,9 +387,9 @@ display: flex;
 }
 
 
-/*.mob-menu__current{
+.mob-menu__current{
 color: var(--accent-color);
-} якщо буде запотрібно виділення кольором активне меню, добавити цей клас в html*/
+}/* якщо буде запотрібно виділення кольором активне меню, добавити цей клас в html*/
 
 .mob-menu__tel{
     font-family: 'Roboto';
